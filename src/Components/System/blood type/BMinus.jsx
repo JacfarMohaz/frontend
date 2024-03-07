@@ -41,7 +41,7 @@ function BMinus() {
     }
 
     const handleReadBMinus = () => {
-        axios.get("http://localhost:7000/bminus/donors").then((res) => {
+        axios.get("https://backend-blood-bank-w3m1.onrender.com/bminus/donors").then((res) => {
             setBMinus(res.data)
         }).catch((error) => console.log(error))
     }

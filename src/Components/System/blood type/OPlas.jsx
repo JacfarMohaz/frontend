@@ -41,7 +41,7 @@ function OPlas() {
     }
 
     const handleReadOPlas = () => {
-        axios.get("http://localhost:7000/oplas/donors").then((res) => {
+        axios.get("https://backend-blood-bank-w3m1.onrender.com/oplas/donors").then((res) => {
             setOplas(res.data)
         }).catch((error) => console.log(error))
     }

@@ -41,7 +41,7 @@ function APlas() {
     }
 
     const handleReadAPlas = () => {
-        axios.get("http://localhost:7000/aplas/donors").then((res) => {
+        axios.get("https://backend-blood-bank-w3m1.onrender.com/aplas/donors").then((res) => {
             setAplas(res.data)
             bloodType = res.data[0].bloodType
         }).catch((error) => console.log(error))

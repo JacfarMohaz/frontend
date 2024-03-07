@@ -41,7 +41,7 @@ function BPlas() {
     }
 
     const handleReadBPlas = () => {
-        axios.get("http://localhost:7000/bplas/donors").then((res) => {
+        axios.get("https://backend-blood-bank-w3m1.onrender.com/bplas/donors").then((res) => {
             setBplas(res.data)
         }).catch((error) => console.log(error))
     }

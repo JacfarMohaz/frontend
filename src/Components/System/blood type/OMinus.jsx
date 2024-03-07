@@ -41,7 +41,7 @@ function OMinus() {
     }
 
     const handleReadOMinus = () => {
-        axios.get("http://localhost:7000/ominus/donors").then((res) => {
+        axios.get("https://backend-blood-bank-w3m1.onrender.com/ominus/donors").then((res) => {
             setOMinus(res.data)
         }).catch((error) => console.log(error))
     }
